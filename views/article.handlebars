@@ -1,0 +1,13 @@
+	
+
+	
+{{#each article as |block|}}
+<div class="col-sm-4 articleCard">
+	<a href="{{block.link}}" target="/blank">
+		<img class="articlePictures" src={{block.img}}>
+		<h1 class="display-3">{{block.title}}</h1>
+		<h4 class="author">Created by: {{block.author}}
+	</a>
+</div>
+
+{{/each}}
